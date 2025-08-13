@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Portfolio • Xentron</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+  <!-- styles -->
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="main-content">
+
+  <div class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="index.html">
+        <img src="Cody_Bajrami-_Logo_Design-Photoroom-removebg-preview.png" alt="Company Logo" style="height:40px;">
+      </a>
+
+    <!-- contact page -->
+      <div class="d-flex justify-content-center flex-grow-1">
+        <a href="index.html" class="nav-link mx-1">New</a>
+        <a href="about.html" class="nav-link mx-1">About</a>
+        <a href="contact.html" class="nav-link mx-1">Contact</a>
+        <a href="about.html" class="nav-link mx-1">Support</a>
+      </div>
+
+      <div class="d-flex align-items-center">
+        <button id="themeToggle" class="btn btn-outline-dark btn-sm me-2">Dark Mode</button>
+        <form class="d-flex">
+          <input class="form-control form-control-sm" type="search" placeholder="Search">
+          <button class="btn btn-dark btn-sm ms-2" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="container text-center mt-5">
+    <h1 class="mb-1">Cody Bajrami</h1>
+    <p class="lead mb-3">Student and Aspiring Developer</p>
+    <div class="d-flex justify-content-center gap-2">
+      <a href="#projects" class="btn btn-dark btn-sm">View Projects</a>
+      <a href="#contact" class="btn btn-outline-dark btn-sm">Get in Touch</a>
+      <a href="Cody Bajrami- Resume 2.pdf" class="btn btn-outline-dark btn-sm" target="_blank" rel="noopener">Download Résumé</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="container mt-5" id="about">
+    <h2 class="text-center">About Me</h2>
+    <p class="mt-3 text-center">
+     I am a dedicated student with a passion for medicine and engineering with a strong interest in AI and app development. I am eager to apply my skills and knowledge to real-world problems and contribute to innovative projects.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section class="container mt-4">
+    <h3 class="text-center">Skills</h3>
+    <div class="text-center mt-3">
+      <span class="badge bg-dark me-1">JavaScript</span>
+      <span class="badge bg-dark me-1">Bootstrap</span>
+      <span class="badge bg-dark me-1">HTML</span>
+      <span class="badge bg-dark me-1">CSS</span>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="container mt-5">
+    <h3 class="text-center mb-3">Experience & Education</h3>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="p-3 border rounded bg-white">
+          <h6 class="mb-1">The Knowledge House - Fellow</h6>
+          <small class="text-muted">2025–2026</small>
+          <ul class="mt-2 mb-0">
+            <li>Learned and applied several design and coding skills to projects.</li>
+            <li>Gained valuable career and college knowledge.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="p-3 border rounded bg-white">
+          <h6 class="mb-1">Tottenville High School</h6>
+          <small class="text-muted">2022–2026</small>
+          <ul class="mt-2 mb-0">
+            <li>Top 6% of class</li>
+            <li>8 AP Classes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="container mt-5" id="contact">
+    <h3 class="text-center mb-3">Get in touch</h3>
+    <div class="row g-4">
+      <div class="col-md-7">
+        <form id="contactForm" class="p-3 border rounded bg-white">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name<span class="text-danger">*</span></label>
+            <input type="text" id="name" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email<span class="text-danger">*</span></label>
+            <input type="email" id="email" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message<span class="text-danger">*</span></label>
+            <textarea id="message" class="form-control" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark">Send</button>
+          <a href="mailto:cbajrami2016@gmail.com" class="btn btn-outline-dark ms-2">
+            <i class="bi bi-envelope"></i> Email
+          </a>
+        </form>
+      </div>
+      <div class="col-md-5">
+        <div class="p-3 border rounded h-100 bg-white">
+          <h6>Social</h6>
+          <p class="mb-1"><i class="bi bi-github"></i> <a href="github.com/cbajrami" class="text-decoration-none">GitHub</a></p>
+          <p class="mb-1"><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/cody-bajrami-20485a369/" class="text-decoration-none">LinkedIn</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="text-center my-4">
+    <a href="index.html" class="btn btn-outline-dark">Back to Home</a>
+  </div>
+</div>
+  <footer class="bg-dark text-light text-center p-3 mt-5">
+    &copy; 2025 Xentron Defense Technologies. All rights reserved.
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
