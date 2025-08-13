@@ -1,4 +1,121 @@
-html {
-  height: 100%;
+@font-face{
+  font-family: 'Norwester';
+  src: url('norwester.otf') format('opentype');
+}
+form input{
+  max-width: 150px;
+}
+.nav-link{
+  color: #333 !important;
+  background-color: #e0e0e0;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none !important;
+  transition: background-color 0.2s ease;
+  display: inline-block;
+}
+.nav-link:hover{
+  background-color: #bdbdbd;
+  color: black !important;
+}
+.top-bar{
+  background-color: lightgray;
+  padding: 10px;
+}
+.tagline{
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  font-family: 'Norwester', sans-serif;
+  font-size: 1.2rem;
+}
+.chat-bar{
+  background-color: lightgray;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chat-bar input{
+  margin-left: 10px;
+  margin-right: 5px;
+}
+footer{
+  margin-bottom: 50px;
+}
+.product-box{
+  border: 2px dashed gray;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.swatch{
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  margin:0 auto;
+  border:2px solid #eee;
+  cursor: pointer;
+  display: inline-block;
+}
+.swatch:focus{
+  outline:3px solid #0F9DFF;
+  outline-offset:3px;
+}
+
+/* dark mode */
+
+body.dark-mode{
+  background-color: #121212;
+  color: #e9e9e9;
+}
+
+body.dark-mode .color-instructions {
+  background-color: #2B2D42; 
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+body.dark-mode .toggle-theme-btn {
+  background-color: #0F9DFF;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+body.dark-mode .toggle-theme-btn:hover {
+  background-color: #6F779D;
+}
+
+body.dark-mode .top-bar{
+  background-color: #1d1d1d;
+}
+
+body.dark-mode .nav-link{
+  background-color: #2a2a2a;
+  color: #e9e9e9 !important;
+}
+body.dark-mode .nav-link:hover{
+  background-color: #3a3a3a;
+  color: #fff !important;
+}
+
+body.dark-mode .chat-bar{
+  background-color: #1d1d1d;
+}
+
+body.dark-mode footer{
+  background-color: #0d0d0d !important; 
+}
+
+body.dark-mode .swatch{
+  border-color: #444;
 }
